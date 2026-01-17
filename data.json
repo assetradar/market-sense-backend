@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "updated_at": "2026-01-17 11:23:07",
+    "status": "success"
+  },
+  "dashboard": {
+    "crypto_fear_index": 50,
+    "crypto_fear_label": "Neutral",
+    "stock_market_mood": 60,
+    "market_summary_headline": "Crypto is in Neutral mode.",
+    "market_summary_body": "Automated analysis based on RSI and Volume data."
+  },
+  "top_movers": [],
+  "signals": [
+    {
+      "id": "sig_NVDA_overbought",
+      "symbol": "NVDA",
+      "signal_type": "RSI_OVERBOUGHT",
+      "value_display": "RSI: 76.8",
+      "action": "SELL",
+      "score": 80
+    },
+    {
+      "id": "sig_TSLA_overbought",
+      "symbol": "TSLA",
+      "signal_type": "RSI_OVERBOUGHT",
+      "value_display": "RSI: 71.4",
+      "action": "SELL",
+      "score": 80
+    },
+    {
+      "id": "sig_AAPL_oversold",
+      "symbol": "AAPL",
+      "signal_type": "RSI_OVERSOLD",
+      "value_display": "RSI: 26.9",
+      "action": "BUY",
+      "score": 80
+    },
+    {
+      "id": "sig_SPY_overbought",
+      "symbol": "SPY",
+      "signal_type": "RSI_OVERBOUGHT",
+      "value_display": "RSI: 79.8",
+      "action": "SELL",
+      "score": 80
+    }
+  ]
+}
