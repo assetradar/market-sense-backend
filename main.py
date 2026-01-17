@@ -5,7 +5,7 @@ import json
 import requests
 from datetime import datetime
 
-# --- 资产配置 (后端只负责计算指标，不负责实时价格) ---
+# --- 资产配置 ---
 # 格式: (显示名称, Yahoo代码)
 # 注意: 加密货币在 Yahoo 是 "BTC-USD" 格式
 ASSETS = [
