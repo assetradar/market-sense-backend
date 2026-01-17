@@ -132,7 +132,7 @@ def analyze_market():
             signals.append({
                 "id": f"{clean_symbol}_{int(datetime.now().timestamp())}",
                 "symbol": clean_symbol,
-                "asset_type": asset_type, # <--- 新增字段：资产类型
+                "asset_type": asset_type, # <--- 关键字段：就是缺了这个！
                 "price": f"{price:.2f}",
                 "signal_type": signal_type,
                 "action": action,
