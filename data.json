@@ -1,23 +1,23 @@
 {
   "meta": {
-    "updated_at": "2026-01-17 07:21:56"
+    "updated_at": "2026-01-17 07:35:42"
   },
   "dashboard": {
     "crypto_fear_index": 50,
-    "crypto_fear_label": "Neutral",
-    "stock_market_mood": 54,
-    "market_summary_headline": "\u5173\u6ce8: AAPL",
-    "market_summary_body": "AI \u5728 Stock \u5e02\u573a\u68c0\u6d4b\u5230 \u4e25\u91cd\u8d85\u5356 \u4fe1\u53f7\u3002\u6210\u4ea4\u91cf\u653e\u5927 1.7x\u3002"
+    "crypto_fear_label": "\u4e2d\u6027",
+    "stock_market_mood": 76,
+    "market_summary_headline": "\u5f02\u52a8\u8b66\u62a5: AAPL",
+    "market_summary_body": "AI \u7b97\u6cd5\u5728 AAPL \u8bc6\u522b\u5230 \u4e25\u91cd\u8d85\u5356 \u4fe1\u53f7\u3002\u5404\u9879\u6280\u672f\u6307\u6807\u5171\u632f\uff0c\u5efa\u8bae\u91cd\u70b9\u5173\u6ce8\u3002"
   },
   "signals": [
     {
-      "id": "AAPL_1768634516",
+      "id": "AAPL_1768635341",
       "symbol": "AAPL",
       "asset_type": "Stock",
       "price": "255.53",
       "signal_type": "\u4e25\u91cd\u8d85\u5356",
-      "action": "\u4e70\u5165",
-      "value_display": "RSI \u4f4e\u4f4d: 19",
+      "action": "\u5173\u6ce8",
+      "value_display": "RSI: 18 \u7b49\u5f85\u53cd\u8f6c",
       "score": 85,
       "sparkline": [
         259.3699951171875,
@@ -29,70 +29,45 @@
         255.52999877929688
       ],
       "stats": {
-        "rsi": "18.7",
+        "rsi": "18.5",
         "vol_ratio": "1.7x",
         "high_24h": "258.90",
         "low_24h": "254.93"
       }
     },
     {
-      "id": "GOOGL_1768634516",
-      "symbol": "GOOGL",
+      "id": "MSFT_1768635342",
+      "symbol": "MSFT",
       "asset_type": "Stock",
-      "price": "330.00",
-      "signal_type": "\u4e25\u91cd\u8d85\u4e70",
-      "action": "\u5356\u51fa",
-      "value_display": "RSI \u9ad8\u4f4d: 78",
-      "score": 80,
+      "price": "459.86",
+      "signal_type": "\u4e25\u91cd\u8d85\u5356",
+      "action": "\u5173\u6ce8",
+      "value_display": "RSI: 30 \u7b49\u5f85\u53cd\u8f6c",
+      "score": 85,
       "sparkline": [
-        328.57000732421875,
-        331.8599853515625,
-        335.9700012207031,
-        335.8399963378906,
-        332.7799987792969,
-        330.0,
-        330.0
+        479.2799987792969,
+        477.17999267578125,
+        470.6700134277344,
+        459.3800048828125,
+        456.6600036621094,
+        459.8599853515625,
+        459.8599853515625
       ],
       "stats": {
-        "rsi": "78.3",
-        "vol_ratio": "1.4x",
-        "high_24h": "334.65",
-        "low_24h": "327.70"
+        "rsi": "29.9",
+        "vol_ratio": "1.5x",
+        "high_24h": "463.19",
+        "low_24h": "456.48"
       }
     },
     {
-      "id": "AMD_1768634516",
-      "symbol": "AMD",
-      "asset_type": "Stock",
-      "price": "231.83",
-      "signal_type": "\u4e25\u91cd\u8d85\u4e70",
-      "action": "\u5356\u51fa",
-      "value_display": "RSI \u9ad8\u4f4d: 76",
-      "score": 80,
-      "sparkline": [
-        203.1699981689453,
-        207.69000244140625,
-        220.97000122070312,
-        223.60000610351562,
-        227.9199981689453,
-        231.8300018310547,
-        231.8300018310547
-      ],
-      "stats": {
-        "rsi": "76.1",
-        "vol_ratio": "1.3x",
-        "high_24h": "234.49",
-        "low_24h": "228.86"
-      }
-    },
-    {
-      "id": "BTC_1768634516",
+      "id": "BTC_1768635341",
       "symbol": "BTC",
       "asset_type": "Crypto",
-      "price": "95100.60",
+      "price": "95119.52",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         90827.4609375,
@@ -101,23 +76,23 @@
         96929.328125,
         95551.1875,
         95525.1171875,
-        95100.6015625
+        95119.515625
       ],
       "stats": {
-        "rsi": "61.4",
+        "rsi": "62.1",
         "vol_ratio": "0.7x",
         "high_24h": "95514.77",
         "low_24h": "95067.98"
       }
     },
     {
-      "id": "ETH_1768634516",
+      "id": "ETH_1768635341",
       "symbol": "ETH",
       "asset_type": "Crypto",
-      "price": "3289.30",
+      "price": "3290.14",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         3118.88525390625,
@@ -126,23 +101,23 @@
         3354.72265625,
         3317.101318359375,
         3295.482177734375,
-        3289.29541015625
+        3290.1357421875
       ],
       "stats": {
-        "rsi": "64.5",
+        "rsi": "60.8",
         "vol_ratio": "1.0x",
         "high_24h": "3294.87",
         "low_24h": "3283.61"
       }
     },
     {
-      "id": "SOL_1768634516",
+      "id": "SOL_1768635341",
       "symbol": "SOL",
       "asset_type": "Crypto",
-      "price": "143.69",
+      "price": "143.85",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         139.49046325683594,
@@ -151,23 +126,23 @@
         146.7528076171875,
         142.3324432373047,
         144.8604736328125,
-        143.69337463378906
+        143.85333251953125
       ],
       "stats": {
-        "rsi": "55.6",
+        "rsi": "61.0",
         "vol_ratio": "0.8x",
         "high_24h": "144.86",
-        "low_24h": "143.69"
+        "low_24h": "143.70"
       }
     },
     {
-      "id": "BNB_1768634516",
+      "id": "BNB_1768635341",
       "symbol": "BNB",
       "asset_type": "Crypto",
-      "price": "935.95",
+      "price": "936.68",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         902.7507934570312,
@@ -176,23 +151,23 @@
         949.10888671875,
         930.8783569335938,
         937.5318603515625,
-        935.9462280273438
+        936.678466796875
       ],
       "stats": {
-        "rsi": "58.1",
+        "rsi": "62.9",
         "vol_ratio": "0.8x",
         "high_24h": "938.18",
         "low_24h": "935.48"
       }
     },
     {
-      "id": "DOGE_1768634516",
+      "id": "DOGE_1768635341",
       "symbol": "DOGE",
       "asset_type": "Crypto",
       "price": "0.14",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         0.13773700594902039,
@@ -201,23 +176,23 @@
         0.14722299575805664,
         0.13999499380588531,
         0.13805900514125824,
-        0.1369992196559906
+        0.13729333877563477
       ],
       "stats": {
-        "rsi": "44.1",
+        "rsi": "48.3",
         "vol_ratio": "0.9x",
         "high_24h": "0.14",
         "low_24h": "0.14"
       }
     },
     {
-      "id": "XRP_1768634516",
+      "id": "XRP_1768635341",
       "symbol": "XRP",
       "asset_type": "Crypto",
       "price": "2.06",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         2.0710649490356445,
@@ -226,23 +201,23 @@
         2.139741897583008,
         2.0781290531158447,
         2.0682179927825928,
-        2.0565853118896484
+        2.059192657470703
       ],
       "stats": {
-        "rsi": "46.0",
+        "rsi": "50.3",
         "vol_ratio": "0.6x",
         "high_24h": "2.07",
         "low_24h": "2.05"
       }
     },
     {
-      "id": "ADA_1768634516",
+      "id": "ADA_1768635341",
       "symbol": "ADA",
       "asset_type": "Crypto",
-      "price": "0.39",
+      "price": "0.40",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         0.3902849853038788,
@@ -251,23 +226,23 @@
         0.41454699635505676,
         0.3934819996356964,
         0.3955340087413788,
-        0.3940548300743103
+        0.395215779542923
       ],
       "stats": {
-        "rsi": "45.5",
+        "rsi": "50.5",
         "vol_ratio": "0.8x",
         "high_24h": "0.40",
         "low_24h": "0.39"
       }
     },
     {
-      "id": "SHIB_1768634516",
+      "id": "SHIB_1768635341",
       "symbol": "SHIB",
       "asset_type": "Crypto",
       "price": "0.00",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         7.999999979801942e-06,
@@ -276,73 +251,123 @@
         9.000000318337698e-06,
         7.999999979801942e-06,
         9.000000318337698e-06,
-        8.485476428177208e-06
+        8.50179094413761e-06
       ],
       "stats": {
-        "rsi": "40.6",
+        "rsi": "52.1",
         "vol_ratio": "0.7x",
         "high_24h": "0.00",
         "low_24h": "0.00"
       }
     },
     {
-      "id": "SPY_1768634516",
-      "symbol": "SPY",
-      "asset_type": "Stock",
-      "price": "691.66",
+      "id": "LINK_1768635341",
+      "symbol": "LINK",
+      "asset_type": "Crypto",
+      "price": "13.72",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
-        694.0700073242188,
-        695.1599731445312,
-        693.77001953125,
-        690.3599853515625,
-        692.239990234375,
-        691.6599731445312,
-        691.6599731445312
+        13.174175262451172,
+        13.068760871887207,
+        14.042167663574219,
+        14.114400863647461,
+        13.784297943115234,
+        13.727490425109863,
+        13.718631744384766
       ],
       "stats": {
-        "rsi": "71.1",
-        "vol_ratio": "1.0x",
-        "high_24h": "694.25",
-        "low_24h": "690.10"
+        "rsi": "56.2",
+        "vol_ratio": "0.6x",
+        "high_24h": "13.73",
+        "low_24h": "13.64"
       }
     },
     {
-      "id": "QQQ_1768634516",
-      "symbol": "QQQ",
-      "asset_type": "Stock",
-      "price": "621.26",
+      "id": "AVAX_1768635341",
+      "symbol": "AVAX",
+      "asset_type": "Crypto",
+      "price": "13.59",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
-        626.6500244140625,
-        627.1699829101562,
-        626.239990234375,
-        619.5499877929688,
-        621.780029296875,
-        621.260009765625,
-        621.260009765625
+        13.677188873291016,
+        13.501553535461426,
+        14.737810134887695,
+        14.619799613952637,
+        13.81952953338623,
+        13.585149765014648,
+        13.587376594543457
       ],
       "stats": {
-        "rsi": "69.4",
-        "vol_ratio": "1.2x",
-        "high_24h": "626.08",
-        "low_24h": "618.88"
+        "rsi": "49.4",
+        "vol_ratio": "0.9x",
+        "high_24h": "13.62",
+        "low_24h": "13.53"
       }
     },
     {
-      "id": "NVDA_1768634516",
+      "id": "NEAR_1768635341",
+      "symbol": "NEAR",
+      "asset_type": "Crypto",
+      "price": "1.76",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        1.7001090049743652,
+        1.6732020378112793,
+        1.8555530309677124,
+        1.8012340068817139,
+        1.720255970954895,
+        1.7314519882202148,
+        1.7619796991348267
+      ],
+      "stats": {
+        "rsi": "55.1",
+        "vol_ratio": "0.9x",
+        "high_24h": "1.76",
+        "low_24h": "1.72"
+      }
+    },
+    {
+      "id": "LTC_1768635341",
+      "symbol": "LTC",
+      "asset_type": "Crypto",
+      "price": "74.61",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        78.68950653076172,
+        76.05021667480469,
+        78.12391662597656,
+        76.7413558959961,
+        72.12104034423828,
+        75.2646255493164,
+        74.61264038085938
+      ],
+      "stats": {
+        "rsi": "40.7",
+        "vol_ratio": "1.3x",
+        "high_24h": "75.91",
+        "low_24h": "73.89"
+      }
+    },
+    {
+      "id": "NVDA_1768635341",
       "symbol": "NVDA",
       "asset_type": "Stock",
       "price": "186.23",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         184.86000061035156,
@@ -354,20 +379,20 @@
         186.22999572753906
       ],
       "stats": {
-        "rsi": "65.3",
+        "rsi": "51.6",
         "vol_ratio": "1.2x",
         "high_24h": "190.44",
         "low_24h": "186.08"
       }
     },
     {
-      "id": "TSLA_1768634516",
+      "id": "TSLA_1768635341",
       "symbol": "TSLA",
       "asset_type": "Stock",
       "price": "437.50",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         445.010009765625,
@@ -379,45 +404,20 @@
         437.5
       ],
       "stats": {
-        "rsi": "56.7",
+        "rsi": "41.1",
         "vol_ratio": "0.9x",
         "high_24h": "447.25",
         "low_24h": "435.26"
       }
     },
     {
-      "id": "MSFT_1768634516",
-      "symbol": "MSFT",
-      "asset_type": "Stock",
-      "price": "459.86",
-      "signal_type": "\u89c2\u5bdf\u4e2d",
-      "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
-      "score": 50,
-      "sparkline": [
-        479.2799987792969,
-        477.17999267578125,
-        470.6700134277344,
-        459.3800048828125,
-        456.6600036621094,
-        459.8599853515625,
-        459.8599853515625
-      ],
-      "stats": {
-        "rsi": "45.5",
-        "vol_ratio": "1.5x",
-        "high_24h": "463.19",
-        "low_24h": "456.48"
-      }
-    },
-    {
-      "id": "AMZN_1768634516",
+      "id": "AMZN_1768635342",
       "symbol": "AMZN",
       "asset_type": "Stock",
       "price": "239.12",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         247.3800048828125,
@@ -429,20 +429,45 @@
         239.1199951171875
       ],
       "stats": {
-        "rsi": "67.1",
+        "rsi": "54.4",
         "vol_ratio": "1.2x",
         "high_24h": "239.57",
         "low_24h": "236.41"
       }
     },
     {
-      "id": "META_1768634516",
+      "id": "GOOGL_1768635342",
+      "symbol": "GOOGL",
+      "asset_type": "Stock",
+      "price": "330.00",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        328.57000732421875,
+        331.8599853515625,
+        335.9700012207031,
+        335.8399963378906,
+        332.7799987792969,
+        330.0,
+        330.0
+      ],
+      "stats": {
+        "rsi": "65.0",
+        "vol_ratio": "1.4x",
+        "high_24h": "334.65",
+        "low_24h": "327.70"
+      }
+    },
+    {
+      "id": "META_1768635342",
       "symbol": "META",
       "asset_type": "Stock",
       "price": "620.25",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         653.0599975585938,
@@ -454,20 +479,45 @@
         620.25
       ],
       "stats": {
-        "rsi": "47.2",
+        "rsi": "31.7",
         "vol_ratio": "1.3x",
         "high_24h": "629.08",
         "low_24h": "620.08"
       }
     },
     {
-      "id": "COIN_1768634516",
+      "id": "AMD_1768635342",
+      "symbol": "AMD",
+      "asset_type": "Stock",
+      "price": "231.83",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        203.1699981689453,
+        207.69000244140625,
+        220.97000122070312,
+        223.60000610351562,
+        227.9199981689453,
+        231.8300018310547,
+        231.8300018310547
+      ],
+      "stats": {
+        "rsi": "68.4",
+        "vol_ratio": "1.3x",
+        "high_24h": "234.49",
+        "low_24h": "228.86"
+      }
+    },
+    {
+      "id": "COIN_1768635342",
       "symbol": "COIN",
       "asset_type": "Stock",
       "price": "241.15",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         240.77999877929688,
@@ -479,20 +529,20 @@
         241.14999389648438
       ],
       "stats": {
-        "rsi": "42.8",
+        "rsi": "46.5",
         "vol_ratio": "0.9x",
         "high_24h": "243.19",
         "low_24h": "236.14"
       }
     },
     {
-      "id": "MSTR_1768634516",
+      "id": "MSTR_1768635342",
       "symbol": "MSTR",
       "asset_type": "Stock",
       "price": "173.71",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         157.3300018310547,
@@ -511,38 +561,63 @@
       }
     },
     {
-      "id": "GME_1768634516",
-      "symbol": "GME",
+      "id": "IBIT_1768635342",
+      "symbol": "IBIT",
       "asset_type": "Stock",
-      "price": "21.10",
+      "price": "54.24",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
-        21.229999542236328,
-        20.979999542236328,
-        21.020000457763672,
-        21.020000457763672,
-        21.360000610351562,
-        21.100000381469727,
-        21.100000381469727
+        51.15999984741211,
+        51.869998931884766,
+        53.56999969482422,
+        55.439998626708984,
+        54.0,
+        54.2400016784668,
+        54.2400016784668
       ],
       "stats": {
-        "rsi": "34.4",
-        "vol_ratio": "0.7x",
-        "high_24h": "21.47",
-        "low_24h": "21.06"
+        "rsi": "63.0",
+        "vol_ratio": "0.9x",
+        "high_24h": "54.37",
+        "low_24h": "53.43"
       }
     },
     {
-      "id": "PLTR_1768634516",
+      "id": "MARA_1768635342",
+      "symbol": "MARA",
+      "asset_type": "Stock",
+      "price": "11.36",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        10.220000267028809,
+        10.649999618530273,
+        10.949999809265137,
+        11.109999656677246,
+        10.65999984741211,
+        11.359999656677246,
+        11.359999656677246
+      ],
+      "stats": {
+        "rsi": "62.1",
+        "vol_ratio": "1.3x",
+        "high_24h": "11.57",
+        "low_24h": "10.59"
+      }
+    },
+    {
+      "id": "PLTR_1768635342",
       "symbol": "PLTR",
       "asset_type": "Stock",
       "price": "170.96",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
-      "value_display": "\u8d8b\u52bf\u4e0d\u660e\u6717",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
       "sparkline": [
         177.49000549316406,
@@ -554,10 +629,35 @@
         170.9600067138672
       ],
       "stats": {
-        "rsi": "55.4",
+        "rsi": "37.2",
         "vol_ratio": "1.5x",
         "high_24h": "182.43",
         "low_24h": "170.01"
+      }
+    },
+    {
+      "id": "GME_1768635342",
+      "symbol": "GME",
+      "asset_type": "Stock",
+      "price": "21.10",
+      "signal_type": "\u89c2\u5bdf\u4e2d",
+      "action": "\u6301\u6709",
+      "value_display": "\u8d8b\u52bf\u9707\u8361",
+      "score": 50,
+      "sparkline": [
+        21.229999542236328,
+        20.979999542236328,
+        21.020000457763672,
+        21.020000457763672,
+        21.360000610351562,
+        21.100000381469727,
+        21.100000381469727
+      ],
+      "stats": {
+        "rsi": "48.3",
+        "vol_ratio": "0.7x",
+        "high_24h": "21.47",
+        "low_24h": "21.06"
       }
     }
   ]
