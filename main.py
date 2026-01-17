@@ -1,6 +1,6 @@
 import yfinance as yf
 import pandas as pd
-import pandas_ta as ta # 必须确保安装了 pandas_ta
+import pandas_ta as ta
 import json
 import requests
 from datetime import datetime
@@ -8,149 +8,121 @@ from datetime import datetime
 # --- 配置区 ---
 TICKERS = {
     'Crypto': ['BTC-USD', 'ETH-USD', 'SOL-USD', 'BNB-USD', 'DOGE-USD'],
-    'Stock': ['SPY', 'QQQ', 'NVDA', 'TSLA', 'COIN', 'MSTR']
+    'Stock': ['SPY', 'QQQ', 'NVDA', 'TSLA', 'COIN', 'MSTR', 'AAPL', 'AMD']
 }
 
-# 1. 获取恐慌指数 (保持不变)
 def get_crypto_fear():
     try:
         url = "https://api.alternative.me/fng/?limit=1"
         response = requests.get(url, timeout=10)
         data = response.json()
-        value = int(data['data'][0]['value'])
-        label = data['data'][0]['value_classification']
-        return value, label
+        return int(data['data'][0]['value']), data['data'][0]['value_classification']
     except:
         return 50, "Neutral"
 
-# 2. 核心算法：生成高级信号
 def analyze_market():
     all_tickers = TICKERS['Crypto'] + TICKERS['Stock']
-    
-    # 下载更多数据以便计算 MACD 和 布林带
-    data = yf.download(all_tickers, period="3mo", interval="1d", group_by='ticker')
+    # 下载数据：足够计算指标 + 画 7 天走势图
+    data = yf.download(all_tickers, period="1mo", interval="1d", group_by='ticker')
     
     signals = []
-    dashboard_mood = 50 # 默认分
-    valid_tickers_count = 0
+    dashboard_mood = 50
+    valid_count = 0
     total_rsi = 0
     
     for symbol in all_tickers:
         try:
             df = data[symbol].copy()
-            if df.empty or len(df) < 30: continue
+            if df.empty or len(df) < 20: continue
             
-            # --- A. 计算技术指标 ---
-            # 1. RSI (相对强弱)
+            # 1. 计算指标
             df.ta.rsi(length=14, append=True)
-            # 2. Bollinger Bands (布林带 - 衡量波动)
             df.ta.bbands(length=20, std=2, append=True)
-            # 3. MACD (趋势)
-            df.ta.macd(fast=12, slow=26, signal=9, append=True)
-            # 4. Volume SMA (成交量均线 - 用于抓巨鲸)
-            df['VOL_SMA_20'] = df['Volume'].rolling(window=20).mean()
+            df['VOL_SMA'] = df['Volume'].rolling(20).mean()
             
-            # 获取最新一行数据
             curr = df.iloc[-1]
             prev = df.iloc[-2]
             
-            # 动态列名 (pandas_ta 自动生成的列名)
-            rsi_val = curr['RSI_14']
-            upper_band = curr['BBU_20_2.0']
-            lower_band = curr['BBL_20_2.0']
-            macd = curr['MACD_12_26_9']
-            macd_signal = curr['MACDs_12_26_9']
-            vol_avg = curr['VOL_SMA_20']
-            curr_vol = curr['Volume']
-            close_price = curr['Close']
+            # 2. 提取关键数据
+            rsi = curr['RSI_14']
+            price = curr['Close']
+            # --- 关键升级：提取过去 7 天的收盘价 (用于 App 画迷你图) ---
+            # 取最后 7 个点，转为列表
+            sparkline = df['Close'].tail(7).tolist()
             
-            # 累加用于计算整体市场情绪
-            total_rsi += rsi_val
-            valid_tickers_count += 1
+            # 3. 信号逻辑 (保持商业级逻辑)
+            signal_type = "NEUTRAL"
+            action = "HOLD"
+            score = 50
+            detail = "Watching"
             
+            # A. 巨鲸逻辑
+            if curr['Volume'] > (curr['VOL_SMA'] * 2.0):
+                if price > prev['Close']:
+                    signal_type = "WHALE_INFLOW"
+                    action = "BUY"
+                    score = 90
+                    detail = "High Vol Accumulation"
+                else:
+                    signal_type = "WHALE_DUMP"
+                    action = "SELL"
+                    score = 85
+                    detail = "Panic Selling Detected"
+            
+            # B. RSI 逻辑
+            elif rsi > 75:
+                signal_type = "OVERBOUGHT"
+                action = "SELL"
+                score = 80
+                detail = f"RSI Peak: {rsi:.1f}"
+            elif rsi < 25:
+                signal_type = "OVERSOLD"
+                action = "BUY"
+                score = 85
+                detail = f"RSI Bottom: {rsi:.1f}"
+            
+            # 只有高价值信号才推送到前台，或者如果不属于高价值，但也保留基础数据供查询
+            # 为了让 App 列表丰富，我们这次把所有数据都保留，但在 App 端过滤
             clean_symbol = symbol.replace("-USD", "")
             
-            # --- B. 商业级信号逻辑 (The Alpha) ---
+            signals.append({
+                "id": f"{clean_symbol}_{datetime.now().timestamp()}",
+                "symbol": clean_symbol,
+                "price": f"{price:.2f}",
+                "signal_type": signal_type,
+                "action": action,
+                "value_display": detail,
+                "score": score,
+                "sparkline": sparkline, # <--- 新增字段：走势数组
+                "stats": { # <--- 新增字段：详情页用的数据
+                    "rsi": f"{rsi:.1f}",
+                    "vol_ratio": f"{curr['Volume']/curr['VOL_SMA']:.1f}x",
+                    "high_24h": f"{curr['High']:.2f}",
+                    "low_24h": f"{curr['Low']:.2f}"
+                }
+            })
             
-            # 策略 1: 巨鲸异动 (Whale Alert)
-            # 逻辑: 成交量是 20日均线的 2.5倍 + 价格变动
-            if curr_vol > (vol_avg * 2.5):
-                signal_type = "WHALE_INFLOW" if close_price > prev['Close'] else "WHALE_DUMP"
-                action = "BUY" if close_price > prev['Close'] else "SELL"
-                score = 95 # 高权重
-                signals.append({
-                    "id": f"whale_{clean_symbol}",
-                    "symbol": clean_symbol,
-                    "signal_type": signal_type,
-                    "value_display": f"Vol: {int(curr_vol/vol_avg)}x Avg",
-                    "action": action,
-                    "score": score
-                })
-
-            # 策略 2: 极度超买/超卖 + 布林带突破 (Reversal Setup)
-            # 逻辑: RSI > 75 且 价格突破布林上轨 -> 极大概率回调
-            elif rsi_val > 75 and close_price > upper_band:
-                signals.append({
-                    "id": f"top_{clean_symbol}",
-                    "symbol": clean_symbol,
-                    "signal_type": "BLOW_OFF_TOP", # 冲高回落预警
-                    "value_display": f"RSI: {rsi_val:.0f} + Breakout",
-                    "action": "TAKE PROFIT",
-                    "score": 90
-                })
+            total_rsi += rsi
+            valid_count += 1
             
-            # 逻辑: RSI < 25 且 价格跌破布林下轨 -> 黄金坑
-            elif rsi_val < 25 and close_price < lower_band:
-                signals.append({
-                    "id": f"btm_{clean_symbol}",
-                    "symbol": clean_symbol,
-                    "signal_type": "OVERSOLD_BOUNCE",
-                    "value_display": f"RSI: {rsi_val:.0f} + Support",
-                    "action": "STRONG BUY",
-                    "score": 90
-                })
-                
-            # 策略 3: MACD 金叉 (Trend Reversal)
-            # 逻辑: MACD 刚刚上穿 Signal 线
-            elif macd > macd_signal and prev['MACD_12_26_9'] <= prev['MACDs_12_26_9']:
-                 signals.append({
-                    "id": f"macd_{clean_symbol}",
-                    "symbol": clean_symbol,
-                    "signal_type": "MOMENTUM_UP",
-                    "value_display": "MACD Crossover",
-                    "action": "BUY",
-                    "score": 70
-                })
-
         except Exception as e:
-            print(f"Skipping {symbol}: {e}")
             continue
 
-    # 计算整体市场情绪 (基于所有资产的平均 RSI)
-    if valid_tickers_count > 0:
-        avg_rsi = total_rsi / valid_tickers_count
-        # 映射: RSI 50 -> Mood 50. RSI 80 -> Mood 90.
-        dashboard_mood = int(avg_rsi) 
-
-    # 排序信号：高分在前
+    if valid_count > 0:
+        dashboard_mood = int(total_rsi / valid_count)
+        
+    # 按分数排序
     signals.sort(key=lambda x: x['score'], reverse=True)
     
-    return signals[:10], dashboard_mood # 只返回前10个最强信号
+    return signals, dashboard_mood
 
 def main():
-    print("Running Advanced Analysis...")
     fear_val, fear_label = get_crypto_fear()
     generated_signals, stock_mood = analyze_market()
     
-    # 生成 "AI 总结" (伪装成 AI，其实是规则引擎)
-    # 这部分文案要写得极其唬人
-    top_signal = generated_signals[0] if generated_signals else None
-    if top_signal:
-        headline = f"Market Focus: {top_signal['symbol']}"
-        body = f"Detected {top_signal['signal_type'].replace('_', ' ')} pattern on {top_signal['symbol']}. Institutional volume suggests a {top_signal['action']} setup."
-    else:
-        headline = "Market is Choppy"
-        body = "No high-confidence signals detected. Liquidity is low. Stay on sidelines."
+    top_sig = generated_signals[0] if generated_signals else None
+    headline = f"Focus: {top_sig['symbol']}" if top_sig else "Market Choppy"
+    body = "Institutional volume anomalies detected." if top_sig else "Low liquidity environment."
 
     output = {
         "meta": {"updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")},
@@ -161,13 +133,11 @@ def main():
             "market_summary_headline": headline,
             "market_summary_body": body
         },
-        "signals": generated_signals,
-        "top_movers": [] # 暂时不需要这个，信号才是重点
+        "signals": generated_signals
     }
     
     with open('data.json', 'w') as f:
         json.dump(output, f, indent=2)
-    print("Analysis Complete.")
 
 if __name__ == "__main__":
     main()
