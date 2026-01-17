@@ -21,7 +21,7 @@ def get_crypto_fear():
         return 50, "Neutral"
 
 def analyze_market():
-    print("Fetching market data...")
+    print("开始获取市场数据...")
     all_tickers = TICKERS['Crypto'] + TICKERS['Stock']
     
     # 下载数据
@@ -33,27 +33,21 @@ def analyze_market():
     
     for symbol in all_tickers:
         try:
-            # 数据清洗
             df = data[symbol].copy()
             df.dropna(inplace=True)
+            if df.empty or len(df) < 20: continue
             
-            if df.empty or len(df) < 20: 
-                continue
-            
-            # --- 1. 计算指标 (防弹版写法) ---
-            # 直接赋值，不使用 append=True，防止版本冲突
+            # --- 计算指标 ---
             df['RSI_14'] = df.ta.rsi(length=14)
             
-            # 布林带会返回3列，我们需要分别处理
+            # 布林带计算
             bbands = df.ta.bbands(length=20, std=2)
-            # pandas_ta 的列名通常是 BBL_20_2.0, BBM_20_2.0, BBU_20_2.0
-            # 我们动态获取列名以防万一
             if bbands is not None:
                 df = pd.concat([df, bbands], axis=1)
                 
             df['VOL_SMA'] = df['Volume'].rolling(20).mean()
             
-            # 再次清洗空值（因为计算指标会产生NaN）
+            # 再次清洗空值
             df.dropna(inplace=True)
             
             if len(df) < 7: continue
@@ -65,52 +59,50 @@ def analyze_market():
             # 动态获取布林带上轨列名
             bbu_col = [c for c in df.columns if c.startswith('BBU')][0]
             
-            # --- 2. 提取数据 ---
+            # --- 提取核心数据 ---
             price = curr['Close']
             rsi = curr['RSI_14']
             vol_sma = curr['VOL_SMA']
             vol_ratio = curr['Volume'] / vol_sma if vol_sma > 0 else 1.0
-            
-            # 提取走势 (最后7天)
             sparkline = df['Close'].tail(7).tolist()
             
-            # --- 3. 信号逻辑 ---
-            signal_type = "WATCHING"
-            action = "HOLD"
+            # --- 3. 信号逻辑 (全中文版) ---
+            signal_type = "观察中"
+            action = "持有"
             score = 50
-            detail = "Neutral"
+            detail = "趋势不明朗"
             
-            # 策略 A: 巨鲸
+            # 策略 A: 巨鲸异动 (成交量突增)
             if vol_ratio > 2.0:
                 if price > prev['Close']:
-                    signal_type = "WHALE_INFLOW"
-                    action = "BUY"
+                    signal_type = "巨鲸吸筹"
+                    action = "买入"
                     score = 90
-                    detail = f"Vol Spike: {vol_ratio:.1f}x"
+                    detail = f"放量上涨: {vol_ratio:.1f}倍"
                 else:
-                    signal_type = "WHALE_DUMP"
-                    action = "SELL"
+                    signal_type = "恐慌抛售"
+                    action = "卖出"
                     score = 85
-                    detail = f"Panic Sell: {vol_ratio:.1f}x"
+                    detail = f"放量下跌: {vol_ratio:.1f}倍"
             
-            # 策略 B: RSI
+            # 策略 B: RSI 极端反转
             elif rsi > 75:
-                signal_type = "OVERBOUGHT"
-                action = "SELL"
+                signal_type = "严重超买"
+                action = "卖出"
                 score = 80
-                detail = f"RSI Peak: {rsi:.0f}"
+                detail = f"RSI 触顶: {rsi:.0f}"
             elif rsi < 25:
-                signal_type = "OVERSOLD"
-                action = "BUY"
+                signal_type = "严重超卖"
+                action = "买入"
                 score = 85
-                detail = f"RSI Bottom: {rsi:.0f}"
+                detail = f"RSI 触底: {rsi:.0f}"
             
-            # 策略 C: 突破
+            # 策略 C: 布林带突破
             elif price > curr[bbu_col]:
-                signal_type = "BREAKOUT"
-                action = "BUY"
+                signal_type = "突破上轨"
+                action = "买入"
                 score = 75
-                detail = "Breakout"
+                detail = "布林带突破"
             
             clean_symbol = symbol.replace("-USD", "")
             
@@ -135,17 +127,21 @@ def analyze_market():
             valid_count += 1
             
         except Exception as e:
-            # 打印错误但不中断整个脚本
             print(f"Skipping {symbol}: {e}")
             continue
 
-    # 汇总
+    # 计算整体市场情绪
     mood = int(total_rsi / valid_count) if valid_count > 0 else 50
     signals.sort(key=lambda x: x['score'], reverse=True)
     
+    # 生成中文市场简报 (头部大字)
     top_sig = signals[0] if signals else None
-    headline = f"Focus: {top_sig['symbol']}" if top_sig else "Market Choppy"
-    body = "Institutional activity detected." if top_sig else "Low volume."
+    if top_sig and top_sig['score'] >= 80:
+        headline = f"重点关注: {top_sig['symbol']}"
+        body = f"检测到 {top_sig['signal_type']} 信号。机构资金正在{top_sig['action']}，成交量异常放大。"
+    else:
+        headline = "市场横盘震荡"
+        body = "暂无高胜率信号，流动性较低，建议观望。"
 
     output = {
         "meta": {"updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")},
@@ -161,7 +157,7 @@ def analyze_market():
     
     with open('data.json', 'w') as f:
         json.dump(output, f, indent=2)
-    print("Success: data.json created")
+    print("Success: data.json created (Chinese Version)")
 
 if __name__ == "__main__":
     fear_val, fear_label = get_crypto_fear()
