@@ -1,24 +1,25 @@
 {
   "meta": {
-    "updated_at": "2026-01-18 00:55:45"
+    "updated_at": "2026-01-18 03:01:22"
   },
   "dashboard": {
     "crypto_fear_index": 49,
     "crypto_fear_label": "\u4e2d\u6027",
     "stock_market_mood": 96,
-    "market_summary_headline": "\u5173\u6ce8: BTC",
-    "market_summary_body": "BTC \u51fa\u73b0 \u89c2\u5bdf\u4e2d \u4fe1\u53f7\u3002"
+    "market_summary_headline": "\u673a\u4f1a: BTC",
+    "market_summary_body": "AI \u7b56\u7565\u5f15\u64ce\u5df2\u5b8c\u6210\u5168\u5e02\u573a\u626b\u63cf\uff0c\u8bf7\u67e5\u770b\u4e0b\u65b9\u8be6\u7ec6\u5206\u6790\u3002"
   },
   "signals": [
     {
-      "id": "BTC_1768697744",
+      "id": "BTC_1768705281",
       "symbol": "BTC",
       "asset_type": "Crypto",
-      "price": "95067.93",
+      "price": "94977.70",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (61.5) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         90827.4609375,
         91192.9921875,
@@ -26,24 +27,25 @@
         96929.328125,
         95551.1875,
         95525.1171875,
-        95067.9296875
+        94977.703125
       ],
       "stats": {
-        "rsi": "61.9",
+        "rsi": "61.5",
         "vol_ratio": "0.4x",
         "high_24h": "95186.79",
-        "low_24h": "95062.30"
+        "low_24h": "94854.27"
       }
     },
     {
-      "id": "ETH_1768697744",
+      "id": "ETH_1768705281",
       "symbol": "ETH",
       "asset_type": "Crypto",
-      "price": "3303.88",
+      "price": "3302.02",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (61.7) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         3118.88525390625,
         3092.3251953125,
@@ -51,24 +53,25 @@
         3354.72265625,
         3317.101318359375,
         3295.482177734375,
-        3303.880126953125
+        3302.015625
       ],
       "stats": {
-        "rsi": "61.8",
+        "rsi": "61.7",
         "vol_ratio": "0.5x",
         "high_24h": "3312.52",
-        "low_24h": "3303.88"
+        "low_24h": "3296.29"
       }
     },
     {
-      "id": "SOL_1768697744",
+      "id": "SOL_1768705281",
       "symbol": "SOL",
       "asset_type": "Crypto",
-      "price": "143.43",
+      "price": "142.40",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (58.5) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         139.49046325683594,
         139.1361846923828,
@@ -76,24 +79,25 @@
         146.7528076171875,
         142.3324432373047,
         144.8604736328125,
-        143.42575073242188
+        142.3965606689453
       ],
       "stats": {
-        "rsi": "60.1",
+        "rsi": "58.5",
         "vol_ratio": "0.5x",
         "high_24h": "143.77",
-        "low_24h": "143.43"
+        "low_24h": "142.19"
       }
     },
     {
-      "id": "BNB_1768697744",
+      "id": "BNB_1768705281",
       "symbol": "BNB",
       "asset_type": "Crypto",
-      "price": "946.72",
+      "price": "945.61",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (65.1) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         902.7507934570312,
         905.4176635742188,
@@ -101,17 +105,17 @@
         949.10888671875,
         930.8783569335938,
         937.5318603515625,
-        946.7212524414062
+        945.608154296875
       ],
       "stats": {
-        "rsi": "65.4",
+        "rsi": "65.1",
         "vol_ratio": "0.9x",
         "high_24h": "949.04",
-        "low_24h": "946.48"
+        "low_24h": "943.72"
       }
     },
     {
-      "id": "DOGE_1768697744",
+      "id": "DOGE_1768705281",
       "symbol": "DOGE",
       "asset_type": "Crypto",
       "price": "0.14",
@@ -119,6 +123,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (48.0) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         0.13773700594902039,
         0.1365399956703186,
@@ -126,24 +131,25 @@
         0.14722299575805664,
         0.13999499380588531,
         0.13805900514125824,
-        0.137569397687912
+        0.13689741492271423
       ],
       "stats": {
-        "rsi": "48.6",
+        "rsi": "48.0",
         "vol_ratio": "0.4x",
         "high_24h": "0.14",
         "low_24h": "0.14"
       }
     },
     {
-      "id": "XRP_1768697744",
+      "id": "XRP_1768705281",
       "symbol": "XRP",
       "asset_type": "Crypto",
-      "price": "2.06",
+      "price": "2.05",
       "signal_type": "\u89c2\u5bdf\u4e2d",
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (49.8) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         2.0710649490356445,
         2.0525450706481934,
@@ -151,17 +157,17 @@
         2.139741897583008,
         2.0781290531158447,
         2.0682179927825928,
-        2.0600602626800537
+        2.0523643493652344
       ],
       "stats": {
-        "rsi": "50.3",
+        "rsi": "49.8",
         "vol_ratio": "0.4x",
         "high_24h": "2.07",
-        "low_24h": "2.06"
+        "low_24h": "2.05"
       }
     },
     {
-      "id": "SHIB_1768697744",
+      "id": "SHIB_1768705281",
       "symbol": "SHIB",
       "asset_type": "Crypto",
       "price": "0.00",
@@ -169,6 +175,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (51.1) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         7.999999979801942e-06,
         7.999999979801942e-06,
@@ -176,17 +183,17 @@
         9.000000318337698e-06,
         7.999999979801942e-06,
         9.000000318337698e-06,
-        8.47546380100539e-06
+        8.398651516472455e-06
       ],
       "stats": {
-        "rsi": "51.8",
+        "rsi": "51.1",
         "vol_ratio": "0.5x",
         "high_24h": "0.00",
         "low_24h": "0.00"
       }
     },
     {
-      "id": "WIF_1768697744",
+      "id": "WIF_1768705281",
       "symbol": "WIF",
       "asset_type": "Crypto",
       "price": "0.38",
@@ -194,6 +201,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (51.0) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002\u6210\u4ea4\u91cf\u6781\u5ea6\u840e\u7f29\uff0c\u5e02\u573a\u89c2\u671b\u60c5\u7eea\u6d53\u539a\uff0c\u53d8\u76d8\u5728\u5373\u3002",
       "sparkline": [
         0.37570300698280334,
         0.3687349855899811,
@@ -201,17 +209,17 @@
         0.4113590121269226,
         0.38581299781799316,
         0.3881869912147522,
-        0.3808790147304535
+        0.3754217028617859
       ],
       "stats": {
-        "rsi": "52.3",
+        "rsi": "51.0",
         "vol_ratio": "0.4x",
         "high_24h": "0.39",
         "low_24h": "0.38"
       }
     },
     {
-      "id": "SPY_1768697745",
+      "id": "SPY_1768705281",
       "symbol": "SPY",
       "asset_type": "Stock",
       "price": "691.66",
@@ -219,6 +227,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (57.0) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         694.0700073242188,
         695.1599731445312,
@@ -236,7 +245,7 @@
       }
     },
     {
-      "id": "QQQ_1768697745",
+      "id": "QQQ_1768705281",
       "symbol": "QQQ",
       "asset_type": "Stock",
       "price": "621.26",
@@ -244,6 +253,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (50.9) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         626.6500244140625,
         627.1699829101562,
@@ -261,7 +271,7 @@
       }
     },
     {
-      "id": "NVDA_1768697745",
+      "id": "NVDA_1768705281",
       "symbol": "NVDA",
       "asset_type": "Stock",
       "price": "186.23",
@@ -269,6 +279,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (51.6) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         184.86000061035156,
         184.94000244140625,
@@ -286,7 +297,7 @@
       }
     },
     {
-      "id": "TSLA_1768697745",
+      "id": "TSLA_1768705281",
       "symbol": "TSLA",
       "asset_type": "Stock",
       "price": "437.50",
@@ -294,6 +305,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807 (41.1) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         445.010009765625,
         448.9599914550781,
@@ -311,7 +323,7 @@
       }
     },
     {
-      "id": "AAPL_1768697745",
+      "id": "AAPL_1768705281",
       "symbol": "AAPL",
       "asset_type": "Stock",
       "price": "255.53",
@@ -319,6 +331,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807\u964d\u81f3 18.5\uff0c\u8fdb\u5165\u3010\u4e25\u91cd\u8d85\u5356\u3011\u533a\u95f4\uff0c\u5e02\u573a\u6050\u614c\u60c5\u7eea\u8fc7\u5ea6\u91ca\u653e\uff0c\u53cd\u5f39\u4e00\u89e6\u5373\u53d1\u3002",
       "sparkline": [
         259.3699951171875,
         260.25,
@@ -336,7 +349,7 @@
       }
     },
     {
-      "id": "MSFT_1768697745",
+      "id": "MSFT_1768705281",
       "symbol": "MSFT",
       "asset_type": "Stock",
       "price": "459.86",
@@ -344,6 +357,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u52a8\u80fd\u8f6c\u5f31\uff0c\u77ed\u671f\u9762\u4e34\u56de\u8c03\u538b\u529b\u3002RSI \u6307\u6807\u964d\u81f3 29.9\uff0c\u8fdb\u5165\u3010\u4e25\u91cd\u8d85\u5356\u3011\u533a\u95f4\uff0c\u5e02\u573a\u6050\u614c\u60c5\u7eea\u8fc7\u5ea6\u91ca\u653e\uff0c\u53cd\u5f39\u4e00\u89e6\u5373\u53d1\u3002",
       "sparkline": [
         479.2799987792969,
         477.17999267578125,
@@ -361,7 +375,7 @@
       }
     },
     {
-      "id": "COIN_1768697745",
+      "id": "COIN_1768705281",
       "symbol": "COIN",
       "asset_type": "Stock",
       "price": "241.15",
@@ -369,6 +383,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (46.5) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         240.77999877929688,
         242.97999572753906,
@@ -386,7 +401,7 @@
       }
     },
     {
-      "id": "MSTR_1768697745",
+      "id": "MSTR_1768705281",
       "symbol": "MSTR",
       "asset_type": "Stock",
       "price": "173.71",
@@ -394,6 +409,7 @@
       "action": "\u6301\u6709",
       "value_display": "\u8d8b\u52bf\u9707\u8361",
       "score": 50,
+      "ai_analysis": "MACD \u6307\u6807\u5728\u96f6\u8f74\u4e0a\u65b9\u8fd0\u884c\uff0c\u5e02\u573a\u5904\u4e8e\u591a\u5934\u4e3b\u5bfc\u8d8b\u52bf\u3002RSI \u6307\u6807 (57.4) \u5904\u4e8e\u4e2d\u6027\u533a\u57df\uff0c\u591a\u7a7a\u53cc\u65b9\u529b\u91cf\u5747\u8861\u3002",
       "sparkline": [
         157.3300018310547,
         162.22999572753906,
