@@ -1,25 +1,25 @@
 {
   "meta": {
-    "updated_at": "2026-03-06 10:23:08"
+    "updated_at": "2026-03-06 11:19:09"
   },
   "dashboard": {
     "crypto_fear_index": 18,
     "crypto_fear_label": "Extreme Fear",
-    "stock_market_mood": 63,
+    "stock_market_mood": 61,
     "market_summary_headline": "Opportunity: BTC",
     "market_summary_body": "AI Strategy Engine has completed a full market scan. Volatility detected in key sectors. Check detailed signals below."
   },
   "signals": [
     {
-      "id": "BTC_1772792587",
+      "id": "BTC_1772795948",
       "symbol": "BTC",
       "asset_type": "Crypto",
-      "price": "70676.83",
+      "price": "70523.86",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (51.4) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (51.0) is in neutral zone.",
       "sparkline": [
         66995.859375,
         65738.1015625,
@@ -27,51 +27,25 @@
         68293.6484375,
         72710.578125,
         70841.125,
-        70676.828125
+        70523.859375
       ],
       "stats": {
-        "rsi": "51.4",
-        "vol_ratio": "1.1x",
+        "rsi": "51.0",
+        "vol_ratio": "1.0x",
         "high_24h": "71336.35",
         "low_24h": "70162.84"
       }
     },
     {
-      "id": "ETH_1772792587",
-      "symbol": "ETH",
-      "asset_type": "Crypto",
-      "price": "2064.78",
-      "signal_type": "Watching",
-      "action": "Watch",
-      "value_display": "Choppy",
-      "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (48.7) is in neutral zone.",
-      "sparkline": [
-        1965.050537109375,
-        1939.066650390625,
-        2027.2689208984375,
-        1982.7689208984375,
-        2126.50537109375,
-        2071.60546875,
-        2064.783203125
-      ],
-      "stats": {
-        "rsi": "48.7",
-        "vol_ratio": "0.9x",
-        "high_24h": "2091.65",
-        "low_24h": "2048.48"
-      }
-    },
-    {
-      "id": "SOL_1772792587",
+      "id": "SOL_1772795948",
       "symbol": "SOL",
       "asset_type": "Crypto",
-      "price": "87.76",
+      "price": "87.87",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (48.3) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (48.4) is in neutral zone.",
       "sparkline": [
         84.36618041992188,
         83.5776596069336,
@@ -79,25 +53,25 @@
         87.0197525024414,
         90.83426666259766,
         88.69110870361328,
-        87.762939453125
+        87.86539459228516
       ],
       "stats": {
-        "rsi": "48.3",
+        "rsi": "48.4",
         "vol_ratio": "1.0x",
         "high_24h": "89.16",
         "low_24h": "87.29"
       }
     },
     {
-      "id": "BNB_1772792587",
+      "id": "BNB_1772795948",
       "symbol": "BNB",
       "asset_type": "Crypto",
-      "price": "641.28",
+      "price": "639.41",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (47.4) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (47.0) is in neutral zone.",
       "sparkline": [
         617.2463989257812,
         618.107177734375,
@@ -105,17 +79,17 @@
         633.8309326171875,
         657.8167724609375,
         647.6258544921875,
-        641.2809448242188
+        639.4072875976562
       ],
       "stats": {
-        "rsi": "47.4",
-        "vol_ratio": "0.9x",
+        "rsi": "47.0",
+        "vol_ratio": "0.8x",
         "high_24h": "651.13",
-        "low_24h": "639.78"
+        "low_24h": "638.82"
       }
     },
     {
-      "id": "DOGE_1772792587",
+      "id": "DOGE_1772795948",
       "symbol": "DOGE",
       "asset_type": "Crypto",
       "price": "0.09",
@@ -123,7 +97,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (44.8) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (44.7) is in neutral zone.",
       "sparkline": [
         0.09406399726867676,
         0.09192900359630585,
@@ -131,17 +105,17 @@
         0.09003300219774246,
         0.09902799874544144,
         0.09353599697351456,
-        0.0936284288764
+        0.09349702298641205
       ],
       "stats": {
-        "rsi": "44.8",
-        "vol_ratio": "0.9x",
+        "rsi": "44.7",
+        "vol_ratio": "0.8x",
         "high_24h": "0.09",
         "low_24h": "0.09"
       }
     },
     {
-      "id": "XRP_1772792587",
+      "id": "XRP_1772795948",
       "symbol": "XRP",
       "asset_type": "Crypto",
       "price": "1.40",
@@ -149,7 +123,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (45.7) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (45.5) is in neutral zone.",
       "sparkline": [
         1.3772289752960205,
         1.3517290353775024,
@@ -157,17 +131,17 @@
         1.360563039779663,
         1.4302200078964233,
         1.4030519723892212,
-        1.4039690494537354
+        1.4021786451339722
       ],
       "stats": {
-        "rsi": "45.7",
-        "vol_ratio": "0.8x",
+        "rsi": "45.5",
+        "vol_ratio": "0.7x",
         "high_24h": "1.41",
         "low_24h": "1.39"
       }
     },
     {
-      "id": "SHIB_1772792587",
+      "id": "SHIB_1772795948",
       "symbol": "SHIB",
       "asset_type": "Crypto",
       "price": "0.00",
@@ -175,7 +149,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (39.4) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (39.0) is in neutral zone.",
       "sparkline": [
         6.000000212225132e-06,
         6.000000212225132e-06,
@@ -183,17 +157,17 @@
         4.999999873689376e-06,
         6.000000212225132e-06,
         6.000000212225132e-06,
-        5.581427558354335e-06
+        5.552304173761513e-06
       ],
       "stats": {
-        "rsi": "39.4",
-        "vol_ratio": "0.9x",
+        "rsi": "39.0",
+        "vol_ratio": "0.8x",
         "high_24h": "0.00",
         "low_24h": "0.00"
       }
     },
     {
-      "id": "WIF_1772792587",
+      "id": "WIF_1772795948",
       "symbol": "WIF",
       "asset_type": "Crypto",
       "price": "0.20",
@@ -201,7 +175,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (40.7) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (40.6) is in neutral zone.",
       "sparkline": [
         0.19503599405288696,
         0.1903650015592575,
@@ -209,17 +183,17 @@
         0.20405100286006927,
         0.21456700563430786,
         0.21442000567913055,
-        0.1995115876197815
+        0.19908052682876587
       ],
       "stats": {
-        "rsi": "40.7",
+        "rsi": "40.6",
         "vol_ratio": "1.1x",
         "high_24h": "0.22",
         "low_24h": "0.20"
       }
     },
     {
-      "id": "SPY_1772792587",
+      "id": "SPY_1772795948",
       "symbol": "SPY",
       "asset_type": "Stock",
       "price": "681.31",
@@ -245,7 +219,7 @@
       }
     },
     {
-      "id": "QQQ_1772792587",
+      "id": "QQQ_1772795948",
       "symbol": "QQQ",
       "asset_type": "Stock",
       "price": "608.91",
@@ -271,7 +245,7 @@
       }
     },
     {
-      "id": "NVDA_1772792587",
+      "id": "NVDA_1772795948",
       "symbol": "NVDA",
       "asset_type": "Stock",
       "price": "183.34",
@@ -297,7 +271,7 @@
       }
     },
     {
-      "id": "TSLA_1772792587",
+      "id": "TSLA_1772795948",
       "symbol": "TSLA",
       "asset_type": "Stock",
       "price": "405.55",
@@ -323,7 +297,7 @@
       }
     },
     {
-      "id": "AAPL_1772792587",
+      "id": "AAPL_1772795948",
       "symbol": "AAPL",
       "asset_type": "Stock",
       "price": "260.29",
@@ -349,7 +323,7 @@
       }
     },
     {
-      "id": "MSFT_1772792587",
+      "id": "MSFT_1772795948",
       "symbol": "MSFT",
       "asset_type": "Stock",
       "price": "410.68",
@@ -375,7 +349,7 @@
       }
     },
     {
-      "id": "COIN_1772792587",
+      "id": "COIN_1772795948",
       "symbol": "COIN",
       "asset_type": "Stock",
       "price": "205.71",
@@ -401,7 +375,7 @@
       }
     },
     {
-      "id": "MSTR_1772792587",
+      "id": "MSTR_1772795948",
       "symbol": "MSTR",
       "asset_type": "Stock",
       "price": "139.81",
