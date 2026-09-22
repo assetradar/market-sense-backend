@@ -1,51 +1,25 @@
 {
   "meta": {
-    "updated_at": "2026-09-22 12:12:33"
+    "updated_at": "2026-09-22 17:23:57"
   },
   "dashboard": {
     "crypto_fear_index": 78,
     "crypto_fear_label": "Extreme Greed",
     "stock_market_mood": 100,
-    "market_summary_headline": "Opportunity: WIF",
+    "market_summary_headline": "Opportunity: DOGE",
     "market_summary_body": "AI Strategy Engine has completed a full market scan. Volatility detected in key sectors. Check detailed signals below."
   },
   "signals": [
     {
-      "id": "WIF_1790079153",
-      "symbol": "WIF",
+      "id": "DOGE_1790097837",
+      "symbol": "DOGE",
       "asset_type": "Crypto",
-      "price": "0.25",
+      "price": "0.10",
       "signal_type": "Whale Buy",
       "action": "Buy",
       "value_display": "Volume Spike",
       "score": 85,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 71.3, entering [Overbought] zone. Caution advised.  Abnormal volume detected (2.8x avg), showing institutional buying.  Price broke above Bollinger Upper Band. Strong momentum.",
-      "sparkline": [
-        0.18338699638843536,
-        0.18633900582790375,
-        0.2140759974718094,
-        0.21138499677181244,
-        0.20261399447917938,
-        0.24515299499034882,
-        0.2549299895763397
-      ],
-      "stats": {
-        "rsi": "71.3",
-        "vol_ratio": "2.8x",
-        "high_24h": "0.26",
-        "low_24h": "0.24"
-      }
-    },
-    {
-      "id": "DOGE_1790079153",
-      "symbol": "DOGE",
-      "asset_type": "Crypto",
-      "price": "0.10",
-      "signal_type": "Panic Sell",
-      "action": "Sell",
-      "value_display": "Volume Dump",
-      "score": 82,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (67.4) is in neutral zone.  Abnormal volume detected (3.1x avg), showing panic selling.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 70.5, entering [Overbought] zone. Caution advised.  Abnormal volume detected (2.9x avg), showing institutional buying.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         0.0808660015463829,
         0.08171799778938293,
@@ -53,25 +27,25 @@
         0.08772200345993042,
         0.08728300034999847,
         0.09962199628353119,
-        0.09804999828338623
+        0.09976000338792801
       ],
       "stats": {
-        "rsi": "67.4",
-        "vol_ratio": "3.1x",
+        "rsi": "70.5",
+        "vol_ratio": "2.9x",
         "high_24h": "0.10",
         "low_24h": "0.10"
       }
     },
     {
-      "id": "SHIB_1790079153",
+      "id": "SHIB_1790097837",
       "symbol": "SHIB",
       "asset_type": "Crypto",
       "price": "0.00",
-      "signal_type": "Panic Sell",
-      "action": "Sell",
-      "value_display": "Volume Dump",
-      "score": 82,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (59.9) is in neutral zone.  Abnormal volume detected (3.0x avg), showing panic selling.",
+      "signal_type": "Whale Buy",
+      "action": "Buy",
+      "value_display": "Volume Spike",
+      "score": 85,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (61.5) is in neutral zone.  Abnormal volume detected (2.6x avg), showing institutional buying.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         4.999999873689376e-06,
         4.999999873689376e-06,
@@ -79,25 +53,51 @@
         6.000000212225132e-06,
         4.999999873689376e-06,
         6.000000212225132e-06,
-        5.920000148762483e-06
+        6.029999894963112e-06
       ],
       "stats": {
-        "rsi": "59.9",
-        "vol_ratio": "3.0x",
+        "rsi": "61.5",
+        "vol_ratio": "2.6x",
         "high_24h": "0.00",
         "low_24h": "0.00"
       }
     },
     {
-      "id": "BTC_1790079153",
+      "id": "WIF_1790097837",
+      "symbol": "WIF",
+      "asset_type": "Crypto",
+      "price": "0.26",
+      "signal_type": "Whale Buy",
+      "action": "Buy",
+      "value_display": "Volume Spike",
+      "score": 85,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 72.6, entering [Overbought] zone. Caution advised.  Abnormal volume detected (2.8x avg), showing institutional buying.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "sparkline": [
+        0.18338699638843536,
+        0.18633900582790375,
+        0.2140759974718094,
+        0.21138499677181244,
+        0.20261399447917938,
+        0.24515299499034882,
+        0.2609100043773651
+      ],
+      "stats": {
+        "rsi": "72.6",
+        "vol_ratio": "2.8x",
+        "high_24h": "0.28",
+        "low_24h": "0.24"
+      }
+    },
+    {
+      "id": "BTC_1790097837",
       "symbol": "BTC",
       "asset_type": "Crypto",
-      "price": "85955.87",
+      "price": "86469.92",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 71.3, entering [Overbought] zone. Caution advised.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 73.3, entering [Overbought] zone. Caution advised.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         76150.3203125,
         76403.7734375,
@@ -105,25 +105,25 @@
         81233.6796875,
         81142.609375,
         86602.9140625,
-        85955.8671875
+        86469.921875
       ],
       "stats": {
-        "rsi": "71.3",
-        "vol_ratio": "1.6x",
+        "rsi": "73.3",
+        "vol_ratio": "1.4x",
         "high_24h": "86597.82",
         "low_24h": "85158.69"
       }
     },
     {
-      "id": "ETH_1790079153",
+      "id": "ETH_1790097837",
       "symbol": "ETH",
       "asset_type": "Crypto",
-      "price": "2743.18",
+      "price": "2749.77",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (68.8) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (69.4) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         2416.119873046875,
         2447.106689453125,
@@ -131,25 +131,25 @@
         2631.962646484375,
         2642.99755859375,
         2776.46826171875,
-        2743.179931640625
+        2749.77001953125
       ],
       "stats": {
-        "rsi": "68.8",
-        "vol_ratio": "1.3x",
+        "rsi": "69.4",
+        "vol_ratio": "1.1x",
         "high_24h": "2776.61",
         "low_24h": "2718.93"
       }
     },
     {
-      "id": "SOL_1790079153",
+      "id": "SOL_1790097837",
       "symbol": "SOL",
       "asset_type": "Crypto",
-      "price": "117.29",
+      "price": "117.83",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (67.7) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (68.5) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         98.64186096191406,
         101.6033935546875,
@@ -157,25 +157,25 @@
         111.01493835449219,
         111.1329116821289,
         118.75012969970703,
-        117.29000091552734
+        117.83000183105469
       ],
       "stats": {
-        "rsi": "67.7",
-        "vol_ratio": "1.7x",
+        "rsi": "68.5",
+        "vol_ratio": "1.4x",
         "high_24h": "119.28",
         "low_24h": "115.66"
       }
     },
     {
-      "id": "XRP_1790079153",
+      "id": "XRP_1790097837",
       "symbol": "XRP",
       "asset_type": "Crypto",
-      "price": "1.54",
+      "price": "1.57",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (65.5) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (67.6) is in neutral zone.  Abnormal volume detected (2.0x avg), showing institutional buying.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         1.2993409633636475,
         1.2958719730377197,
@@ -183,25 +183,25 @@
         1.410446047782898,
         1.4098520278930664,
         1.5330430269241333,
-        1.5369000434875488
+        1.5729999542236328
       ],
       "stats": {
-        "rsi": "65.5",
-        "vol_ratio": "1.9x",
-        "high_24h": "1.55",
+        "rsi": "67.6",
+        "vol_ratio": "2.0x",
+        "high_24h": "1.58",
         "low_24h": "1.50"
       }
     },
     {
-      "id": "QQQ_1790079153",
+      "id": "QQQ_1790097837",
       "symbol": "QQQ",
       "asset_type": "Stock",
-      "price": "741.47",
+      "price": "745.10",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 71.1, entering [Overbought] zone. Caution advised.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 72.8, entering [Overbought] zone. Caution advised.  Volume is extremely low, market is waiting for direction.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         703.9863891601562,
         716.1737060546875,
@@ -209,129 +209,25 @@
         720.6990356445312,
         720.6990356445312,
         741.469970703125,
-        741.469970703125
+        745.0999755859375
       ],
       "stats": {
-        "rsi": "71.1",
-        "vol_ratio": "1.3x",
-        "high_24h": "743.22",
-        "low_24h": "727.81"
+        "rsi": "72.8",
+        "vol_ratio": "0.6x",
+        "high_24h": "746.60",
+        "low_24h": "741.00"
       }
     },
     {
-      "id": "MSTR_1790079153",
-      "symbol": "MSTR",
+      "id": "TSLA_1790097837",
+      "symbol": "TSLA",
       "asset_type": "Stock",
-      "price": "168.50",
+      "price": "378.82",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 73.9, entering [Overbought] zone. Caution advised.  Price broke above Bollinger Upper Band. Strong momentum.",
-      "sparkline": [
-        126.18000030517578,
-        132.25,
-        153.9199981689453,
-        153.9199981689453,
-        153.9199981689453,
-        168.5,
-        168.5
-      ],
-      "stats": {
-        "rsi": "73.9",
-        "vol_ratio": "1.4x",
-        "high_24h": "169.52",
-        "low_24h": "164.49"
-      }
-    },
-    {
-      "id": "BNB_1790079153",
-      "symbol": "BNB",
-      "asset_type": "Crypto",
-      "price": "785.80",
-      "signal_type": "Watching",
-      "action": "Watch",
-      "value_display": "Choppy",
-      "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (67.1) is in neutral zone.",
-      "sparkline": [
-        725.575927734375,
-        738.001953125,
-        761.0164184570312,
-        762.0443725585938,
-        772.34814453125,
-        798.89013671875,
-        785.7999877929688
-      ],
-      "stats": {
-        "rsi": "67.1",
-        "vol_ratio": "1.3x",
-        "high_24h": "799.41",
-        "low_24h": "783.94"
-      }
-    },
-    {
-      "id": "SPY_1790079153",
-      "symbol": "SPY",
-      "asset_type": "Stock",
-      "price": "773.50",
-      "signal_type": "Watching",
-      "action": "Watch",
-      "value_display": "Choppy",
-      "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (62.5) is in neutral zone.",
-      "sparkline": [
-        752.1821899414062,
-        760.7109985351562,
-        761.6900024414062,
-        761.6900024414062,
-        761.6900024414062,
-        773.5,
-        773.5
-      ],
-      "stats": {
-        "rsi": "62.5",
-        "vol_ratio": "1.1x",
-        "high_24h": "774.89",
-        "low_24h": "766.03"
-      }
-    },
-    {
-      "id": "NVDA_1790079153",
-      "symbol": "NVDA",
-      "asset_type": "Stock",
-      "price": "227.38",
-      "signal_type": "Watching",
-      "action": "Watch",
-      "value_display": "Choppy",
-      "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (60.2) is in neutral zone.",
-      "sparkline": [
-        213.89999389648438,
-        219.33999633789062,
-        222.27000427246094,
-        222.27000427246094,
-        222.27000427246094,
-        227.3800048828125,
-        227.3800048828125
-      ],
-      "stats": {
-        "rsi": "60.2",
-        "vol_ratio": "0.9x",
-        "high_24h": "228.50",
-        "low_24h": "221.56"
-      }
-    },
-    {
-      "id": "TSLA_1790079153",
-      "symbol": "TSLA",
-      "asset_type": "Stock",
-      "price": "375.30",
-      "signal_type": "Watching",
-      "action": "Watch",
-      "value_display": "Choppy",
-      "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (62.2) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (64.2) is in neutral zone.  Volume is extremely low, market is waiting for direction.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         358.0799865722656,
         366.20001220703125,
@@ -339,25 +235,129 @@
         364.2699890136719,
         364.2699890136719,
         375.29998779296875,
-        375.29998779296875
+        378.822998046875
       ],
       "stats": {
-        "rsi": "62.2",
-        "vol_ratio": "0.8x",
-        "high_24h": "378.36",
-        "low_24h": "371.07"
+        "rsi": "64.2",
+        "vol_ratio": "0.4x",
+        "high_24h": "379.46",
+        "low_24h": "372.88"
       }
     },
     {
-      "id": "AAPL_1790079153",
-      "symbol": "AAPL",
+      "id": "MSTR_1790097837",
+      "symbol": "MSTR",
       "asset_type": "Stock",
-      "price": "338.98",
+      "price": "169.43",
+      "signal_type": "Breakout",
+      "action": "Hold",
+      "value_display": "Strong Trend",
+      "score": 70,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 74.2, entering [Overbought] zone. Caution advised.  Volume is extremely low, market is waiting for direction.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "sparkline": [
+        126.18000030517578,
+        132.25,
+        153.9199981689453,
+        153.9199981689453,
+        153.9199981689453,
+        168.5,
+        169.42779541015625
+      ],
+      "stats": {
+        "rsi": "74.2",
+        "vol_ratio": "0.6x",
+        "high_24h": "171.17",
+        "low_24h": "167.25"
+      }
+    },
+    {
+      "id": "BNB_1790097837",
+      "symbol": "BNB",
+      "asset_type": "Crypto",
+      "price": "788.29",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 70.7, entering [Overbought] zone. Caution advised.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (68.1) is in neutral zone.",
+      "sparkline": [
+        725.575927734375,
+        738.001953125,
+        761.0164184570312,
+        762.0443725585938,
+        772.34814453125,
+        798.89013671875,
+        788.2899780273438
+      ],
+      "stats": {
+        "rsi": "68.1",
+        "vol_ratio": "1.2x",
+        "high_24h": "799.41",
+        "low_24h": "782.98"
+      }
+    },
+    {
+      "id": "SPY_1790097837",
+      "symbol": "SPY",
+      "asset_type": "Stock",
+      "price": "773.13",
+      "signal_type": "Watching",
+      "action": "Watch",
+      "value_display": "Choppy",
+      "score": 50,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (61.9) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "sparkline": [
+        752.1821899414062,
+        760.7109985351562,
+        761.6900024414062,
+        761.6900024414062,
+        761.6900024414062,
+        773.5,
+        773.1300048828125
+      ],
+      "stats": {
+        "rsi": "61.9",
+        "vol_ratio": "0.4x",
+        "high_24h": "775.14",
+        "low_24h": "772.59"
+      }
+    },
+    {
+      "id": "NVDA_1790097837",
+      "symbol": "NVDA",
+      "asset_type": "Stock",
+      "price": "229.55",
+      "signal_type": "Watching",
+      "action": "Watch",
+      "value_display": "Choppy",
+      "score": 50,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (62.5) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "sparkline": [
+        213.89999389648438,
+        219.33999633789062,
+        222.27000427246094,
+        222.27000427246094,
+        222.27000427246094,
+        227.3800048828125,
+        229.54989624023438
+      ],
+      "stats": {
+        "rsi": "62.5",
+        "vol_ratio": "0.4x",
+        "high_24h": "229.98",
+        "low_24h": "226.50"
+      }
+    },
+    {
+      "id": "AAPL_1790097837",
+      "symbol": "AAPL",
+      "asset_type": "Stock",
+      "price": "341.33",
+      "signal_type": "Watching",
+      "action": "Watch",
+      "value_display": "Choppy",
+      "score": 50,
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI reached 73.0, entering [Overbought] zone. Caution advised.  Volume is extremely low, market is waiting for direction.",
       "sparkline": [
         332.4100036621094,
         337.0,
@@ -365,25 +365,25 @@
         336.1300048828125,
         336.1300048828125,
         338.9800109863281,
-        338.9800109863281
+        341.3299865722656
       ],
       "stats": {
-        "rsi": "70.7",
-        "vol_ratio": "0.7x",
-        "high_24h": "339.64",
-        "low_24h": "333.05"
+        "rsi": "73.0",
+        "vol_ratio": "0.4x",
+        "high_24h": "345.34",
+        "low_24h": "338.75"
       }
     },
     {
-      "id": "MSFT_1790079153",
+      "id": "MSFT_1790097837",
       "symbol": "MSFT",
       "asset_type": "Stock",
-      "price": "501.61",
+      "price": "497.20",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (56.5) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (52.3) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
       "sparkline": [
         490.29998779296875,
         497.75,
@@ -391,25 +391,25 @@
         493.7799987792969,
         493.7799987792969,
         501.6099853515625,
-        501.6099853515625
+        497.19500732421875
       ],
       "stats": {
-        "rsi": "56.5",
-        "vol_ratio": "1.3x",
-        "high_24h": "501.87",
-        "low_24h": "491.33"
+        "rsi": "52.3",
+        "vol_ratio": "0.5x",
+        "high_24h": "508.50",
+        "low_24h": "493.65"
       }
     },
     {
-      "id": "COIN_1790079153",
+      "id": "COIN_1790097837",
       "symbol": "COIN",
       "asset_type": "Stock",
-      "price": "201.05",
+      "price": "199.64",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (62.2) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (61.1) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
       "sparkline": [
         164.50999450683594,
         173.97000122070312,
@@ -417,13 +417,13 @@
         194.25,
         194.25,
         201.0500030517578,
-        201.0500030517578
+        199.63999938964844
       ],
       "stats": {
-        "rsi": "62.2",
-        "vol_ratio": "1.2x",
-        "high_24h": "208.33",
-        "low_24h": "200.65"
+        "rsi": "61.1",
+        "vol_ratio": "0.4x",
+        "high_24h": "203.00",
+        "low_24h": "197.20"
       }
     }
   ]
