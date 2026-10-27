@@ -1,17 +1,17 @@
 {
   "meta": {
-    "updated_at": "2026-10-27 18:25:51"
+    "updated_at": "2026-10-27 22:42:20"
   },
   "dashboard": {
     "crypto_fear_index": 48,
     "crypto_fear_label": "Neutral",
-    "stock_market_mood": 88,
+    "stock_market_mood": 89,
     "market_summary_headline": "Opportunity: SHIB",
     "market_summary_body": "AI Strategy Engine has completed a full market scan. Volatility detected in key sectors. Check detailed signals below."
   },
   "signals": [
     {
-      "id": "SHIB_1793125551",
+      "id": "SHIB_1793140940",
       "symbol": "SHIB",
       "asset_type": "Crypto",
       "price": "0.00",
@@ -19,7 +19,7 @@
       "action": "Buy",
       "value_display": "Oversold Reversal",
       "score": 88,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI dropped to 27.4, entering [Oversold] zone. Rebound likely.  Price broke below Bollinger Lower Band. Mean reversion expected.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI dropped to 27.8, entering [Oversold] zone. Rebound likely.  Price broke below Bollinger Lower Band. Mean reversion expected.",
       "sparkline": [
         4.999999873689376e-06,
         4.999999873689376e-06,
@@ -27,25 +27,25 @@
         4.999999873689376e-06,
         4.999999873689376e-06,
         4.999999873689376e-06,
-        4.86999988424941e-06
+        4.879999778495403e-06
       ],
       "stats": {
-        "rsi": "27.4",
+        "rsi": "27.8",
         "vol_ratio": "0.9x",
         "high_24h": "0.00",
         "low_24h": "0.00"
       }
     },
     {
-      "id": "TSLA_1793125551",
+      "id": "TSLA_1793140940",
       "symbol": "TSLA",
       "asset_type": "Stock",
-      "price": "405.74",
+      "price": "407.46",
       "signal_type": "Breakout",
       "action": "Hold",
       "value_display": "Strong Trend",
       "score": 70,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (69.3) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (69.8) is in neutral zone.  Price broke above Bollinger Upper Band. Strong momentum.",
       "sparkline": [
         386.4700012207031,
         374.5799865722656,
@@ -53,25 +53,25 @@
         372.2200012207031,
         372.2200012207031,
         391.6199951171875,
-        405.739990234375
+        407.4599914550781
       ],
       "stats": {
-        "rsi": "69.3",
-        "vol_ratio": "0.8x",
-        "high_24h": "407.50",
+        "rsi": "69.8",
+        "vol_ratio": "1.1x",
+        "high_24h": "408.45",
         "low_24h": "395.25"
       }
     },
     {
-      "id": "BTC_1793125551",
+      "id": "BTC_1793140940",
       "symbol": "BTC",
       "asset_type": "Crypto",
-      "price": "80564.97",
+      "price": "80771.40",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (44.3) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (45.3) is in neutral zone.",
       "sparkline": [
         84011.96875,
         81311.890625,
@@ -79,25 +79,25 @@
         80790.8359375,
         80024.0078125,
         80006.65625,
-        80564.96875
+        80771.3984375
       ],
       "stats": {
-        "rsi": "44.3",
+        "rsi": "45.3",
         "vol_ratio": "0.9x",
-        "high_24h": "80673.68",
+        "high_24h": "81117.01",
         "low_24h": "79380.36"
       }
     },
     {
-      "id": "ETH_1793125551",
+      "id": "ETH_1793140940",
       "symbol": "ETH",
       "asset_type": "Crypto",
-      "price": "2345.45",
+      "price": "2347.26",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (37.4) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (37.7) is in neutral zone.",
       "sparkline": [
         2470.76611328125,
         2386.189208984375,
@@ -105,25 +105,25 @@
         2355.95361328125,
         2326.920166015625,
         2320.28125,
-        2345.449951171875
+        2347.260009765625
       ],
       "stats": {
-        "rsi": "37.4",
-        "vol_ratio": "0.8x",
-        "high_24h": "2351.79",
+        "rsi": "37.7",
+        "vol_ratio": "0.9x",
+        "high_24h": "2357.18",
         "low_24h": "2294.92"
       }
     },
     {
-      "id": "SOL_1793125551",
+      "id": "SOL_1793140940",
       "symbol": "SOL",
       "asset_type": "Crypto",
-      "price": "100.82",
+      "price": "101.14",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (35.2) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (36.3) is in neutral zone.",
       "sparkline": [
         106.79365539550781,
         103.54232025146484,
@@ -131,25 +131,25 @@
         102.27165985107422,
         101.22320556640625,
         100.75485229492188,
-        100.81999969482422
+        101.13999938964844
       ],
       "stats": {
-        "rsi": "35.2",
+        "rsi": "36.3",
         "vol_ratio": "0.8x",
-        "high_24h": "101.04",
+        "high_24h": "101.57",
         "low_24h": "99.17"
       }
     },
     {
-      "id": "BNB_1793125551",
+      "id": "BNB_1793140940",
       "symbol": "BNB",
       "asset_type": "Crypto",
-      "price": "749.04",
+      "price": "743.65",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (53.4) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (51.0) is in neutral zone.",
       "sparkline": [
         745.8683471679688,
         730.4766235351562,
@@ -157,17 +157,17 @@
         738.6997680664062,
         737.724609375,
         741.4193725585938,
-        749.0399780273438
+        743.6500244140625
       ],
       "stats": {
-        "rsi": "53.4",
+        "rsi": "51.0",
         "vol_ratio": "1.1x",
         "high_24h": "751.45",
         "low_24h": "733.56"
       }
     },
     {
-      "id": "DOGE_1793125551",
+      "id": "DOGE_1793140940",
       "symbol": "DOGE",
       "asset_type": "Crypto",
       "price": "0.08",
@@ -175,7 +175,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (37.7) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (38.9) is in neutral zone.",
       "sparkline": [
         0.08186700195074081,
         0.0786760002374649,
@@ -183,17 +183,17 @@
         0.07759500294923782,
         0.07684200257062912,
         0.07760100066661835,
-        0.07813999801874161
+        0.07851000130176544
       ],
       "stats": {
-        "rsi": "37.7",
+        "rsi": "38.9",
         "vol_ratio": "0.6x",
         "high_24h": "0.08",
         "low_24h": "0.08"
       }
     },
     {
-      "id": "XRP_1793125551",
+      "id": "XRP_1793140940",
       "symbol": "XRP",
       "asset_type": "Crypto",
       "price": "1.32",
@@ -201,7 +201,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (44.2) is in neutral zone.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (44.6) is in neutral zone.",
       "sparkline": [
         1.3636189699172974,
         1.3076560497283936,
@@ -209,17 +209,17 @@
         1.2984750270843506,
         1.2944079637527466,
         1.306900978088379,
-        1.3207999467849731
+        1.322700023651123
       ],
       "stats": {
-        "rsi": "44.2",
-        "vol_ratio": "0.8x",
-        "high_24h": "1.32",
+        "rsi": "44.6",
+        "vol_ratio": "0.9x",
+        "high_24h": "1.33",
         "low_24h": "1.29"
       }
     },
     {
-      "id": "WIF_1793125551",
+      "id": "WIF_1793140940",
       "symbol": "WIF",
       "asset_type": "Crypto",
       "price": "0.18",
@@ -227,7 +227,7 @@
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (34.7) is in neutral zone.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (34.3) is in neutral zone.",
       "sparkline": [
         0.21008500456809998,
         0.19662000238895416,
@@ -235,25 +235,25 @@
         0.18508900701999664,
         0.178739994764328,
         0.18066099286079407,
-        0.18007999658584595
+        0.17922000586986542
       ],
       "stats": {
-        "rsi": "34.7",
-        "vol_ratio": "1.2x",
+        "rsi": "34.3",
+        "vol_ratio": "1.1x",
         "high_24h": "0.18",
         "low_24h": "0.18"
       }
     },
     {
-      "id": "SPY_1793125551",
+      "id": "SPY_1793140940",
       "symbol": "SPY",
       "asset_type": "Stock",
-      "price": "769.45",
+      "price": "769.66",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (52.4) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (52.4) is in neutral zone.",
       "sparkline": [
         773.0900268554688,
         763.9600219726562,
@@ -261,25 +261,25 @@
         759.969970703125,
         759.969970703125,
         765.3699951171875,
-        769.4500122070312
+        769.6599731445312
       ],
       "stats": {
         "rsi": "52.4",
-        "vol_ratio": "0.4x",
-        "high_24h": "771.07",
+        "vol_ratio": "0.7x",
+        "high_24h": "771.13",
         "low_24h": "765.21"
       }
     },
     {
-      "id": "QQQ_1793125551",
+      "id": "QQQ_1793140940",
       "symbol": "QQQ",
       "asset_type": "Stock",
-      "price": "720.70",
+      "price": "721.25",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (47.9) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (48.2) is in neutral zone.",
       "sparkline": [
         725.2000122070312,
         704.469970703125,
@@ -287,25 +287,25 @@
         704.4000244140625,
         704.4000244140625,
         712.2000122070312,
-        720.6998901367188
+        721.25
       ],
       "stats": {
-        "rsi": "47.9",
-        "vol_ratio": "0.5x",
-        "high_24h": "722.72",
+        "rsi": "48.2",
+        "vol_ratio": "0.8x",
+        "high_24h": "722.86",
         "low_24h": "713.59"
       }
     },
     {
-      "id": "NVDA_1793125551",
+      "id": "NVDA_1793140940",
       "symbol": "NVDA",
       "asset_type": "Stock",
-      "price": "217.63",
+      "price": "217.94",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (46.7) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (47.0) is in neutral zone.",
       "sparkline": [
         221.97000122070312,
         212.2100067138672,
@@ -313,25 +313,25 @@
         210.9600067138672,
         210.9600067138672,
         216.0,
-        217.63099670410156
+        217.94000244140625
       ],
       "stats": {
-        "rsi": "46.7",
-        "vol_ratio": "0.6x",
+        "rsi": "47.0",
+        "vol_ratio": "0.9x",
         "high_24h": "219.19",
         "low_24h": "215.53"
       }
     },
     {
-      "id": "AAPL_1793125551",
+      "id": "AAPL_1793140940",
       "symbol": "AAPL",
       "asset_type": "Stock",
-      "price": "345.60",
+      "price": "347.10",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (58.9) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD is above signal line, indicating a bullish trend.  RSI (61.1) is in neutral zone.",
       "sparkline": [
         343.989990234375,
         348.2200012207031,
@@ -339,25 +339,25 @@
         347.7300109863281,
         347.7300109863281,
         343.9100036621094,
-        345.5950012207031
+        347.1000061035156
       ],
       "stats": {
-        "rsi": "58.9",
-        "vol_ratio": "0.4x",
+        "rsi": "61.1",
+        "vol_ratio": "0.9x",
         "high_24h": "347.78",
         "low_24h": "342.39"
       }
     },
     {
-      "id": "MSFT_1793125551",
+      "id": "MSFT_1793140940",
       "symbol": "MSFT",
       "asset_type": "Stock",
-      "price": "531.08",
+      "price": "531.33",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (55.4) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (55.6) is in neutral zone.",
       "sparkline": [
         532.9500122070312,
         521.0800170898438,
@@ -365,25 +365,25 @@
         524.510009765625,
         524.510009765625,
         532.5999755859375,
-        531.0800170898438
+        531.3300170898438
       ],
       "stats": {
-        "rsi": "55.4",
-        "vol_ratio": "0.5x",
+        "rsi": "55.6",
+        "vol_ratio": "1.0x",
         "high_24h": "534.70",
         "low_24h": "528.33"
       }
     },
     {
-      "id": "COIN_1793125551",
+      "id": "COIN_1793140940",
       "symbol": "COIN",
       "asset_type": "Stock",
-      "price": "160.49",
+      "price": "161.09",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (36.5) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (37.1) is in neutral zone.",
       "sparkline": [
         177.0800018310547,
         169.08999633789062,
@@ -391,25 +391,25 @@
         164.4499969482422,
         164.4499969482422,
         159.60000610351562,
-        160.49000549316406
+        161.08999633789062
       ],
       "stats": {
-        "rsi": "36.5",
-        "vol_ratio": "0.4x",
+        "rsi": "37.1",
+        "vol_ratio": "0.7x",
         "high_24h": "161.87",
         "low_24h": "157.75"
       }
     },
     {
-      "id": "MSTR_1793125551",
+      "id": "MSTR_1793140940",
       "symbol": "MSTR",
       "asset_type": "Stock",
-      "price": "140.17",
+      "price": "141.40",
       "signal_type": "Watching",
       "action": "Watch",
       "value_display": "Choppy",
       "score": 50,
-      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (43.1) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
+      "ai_analysis": "MACD momentum is weakening, potential pullback ahead.  RSI (44.5) is in neutral zone.  Volume is extremely low, market is waiting for direction.",
       "sparkline": [
         153.47999572753906,
         145.8000030517578,
@@ -417,13 +417,13 @@
         146.00999450683594,
         146.00999450683594,
         139.82000732421875,
-        140.1699981689453
+        141.39999389648438
       ],
       "stats": {
-        "rsi": "43.1",
-        "vol_ratio": "0.3x",
+        "rsi": "44.5",
+        "vol_ratio": "0.5x",
         "high_24h": "142.00",
-        "low_24h": "138.70"
+        "low_24h": "138.69"
       }
     }
   ]
